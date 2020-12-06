@@ -1,0 +1,31 @@
+﻿<Window x:Class="FinalProjectWPF.DeciperWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectWPF"
+        mc:Ignorable="d"
+        Title="DeciperWindow" Height="750" Width="824.59">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="26,105,0,0" TextWrapping="Wrap" Text="Выберите файл для расшифровки" VerticalAlignment="Top" Width="397"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="26,341,0,0" TextWrapping="Wrap" Text="Выберите файл с ключом" VerticalAlignment="Top" Width="397"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="428,105,0,0" VerticalAlignment="Top" Width="31" Height="23"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="428,341,0,0" VerticalAlignment="Top" Width="31" Height="23"/>
+        <Button Content="Расшифровать" HorizontalAlignment="Left" Margin="26,383,0,0" VerticalAlignment="Top" Width="124" Height="36" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="26,309,0,0" TextWrapping="Wrap" Text="Введите ключ" VerticalAlignment="Top" Width="397"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,143,0,0" TextWrapping="Wrap" Text="Введите текст, который будет зашифрован" VerticalAlignment="Top" Width="397" Height="100" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+        <RadioButton Content="Ввести текст вручную" HorizontalAlignment="Left" Margin="26,45,0,0" VerticalAlignment="Top" Height="19" Width="142"/>
+        <RadioButton Content="Выбрать файл" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" Height="19" Width="142"/>
+        <RadioButton Content="Ввести ключ вручную" HorizontalAlignment="Left" Margin="26,254,0,0" VerticalAlignment="Top" Height="19" Width="142"/>
+        <RadioButton Content="Выбрать файл" HorizontalAlignment="Left" Margin="26,273,0,0" VerticalAlignment="Top" Height="19" Width="142"/>
+        <TextBlock HorizontalAlignment="Left" Margin="497,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Height="156" FontSize="14"><Run Text="1. Ключ должен состоять ТОЛЬКО из букв русского алфавита."/><LineBreak/><Run Text="2"/><Run Text=". "/><Run Text="Ключ не чувствителен к регистру (КЛЮЧ=ключ)"/><LineBreak/><Run Text="3"/><Run Text=". "/><Run Text="Ключ не должен быть длиннее исходного текста"/><LineBreak/><Run Text="4"/><Run Text=". "/><Run Text="Ключ не может состоять менее, чем из одного символа"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="497,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Height="80" FontSize="14"><Run Text="1. "/><Run Text="Исходный текст должен иметь длину большую или равную длине ключа"/><LineBreak/><Run Text="2. При шифровании учитываются только "/><Run Text="буквы русского алфавита"/></TextBlock>
+        <Label Content="Требования к исходному тексту" HorizontalAlignment="Left" Margin="497,39,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FFEC0A0A" FontSize="14"/>
+        <Label Content="Требования к ключу" HorizontalAlignment="Left" Margin="497,153,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FFEC0A0A" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,446,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="756" Height="136" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+
+    </Grid>
+</Window>
